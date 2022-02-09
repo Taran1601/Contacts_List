@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/add.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th><i class="fas fa-user-alt"></i> Name</th>
+            <th><i class="fas fa-phone-alt"></i> Phone</th>
+            <th><i class="fas fa-envelope"></i> Email</th>
+            <th><i class="fas fa-user-minus"></i> Delete</th>
+            <th><i class="fas fa-user-edit"></i> Update</th>
+        </tr>
+      <% for(let i of contact_list) {%>
+          <tr>
+              <td><%= i.name %></td>
+              <td><%= i.phone %></td>
+              <td><%= i.email %></td>
+              <td><a href="/delete_contact/?id=<%= i._id %>" id="del"><i class="far fa-times-circle"></i></a></td>
+              <td><a href="/update_contact/?id=<%= i._id %>" id="up"><i class="fas fa-pencil"></i></a></td>
+          </tr>
+     <%}%>
+    </table>
+</body>
+</html>

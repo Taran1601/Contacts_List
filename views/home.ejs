@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1>Contacts List</h1>
+    <form action="/add_contact" method="post">
+        <h3>Enter Your details-></h3>
+        <div class="main" >
+         <div class="details" > Enter Your Name: <input type="text" name="name" placeholder="Name" required></div>
+       <div class="details">Enter Your Phone number: <input type="number" name="phone" placeholder="Phone" required></div>
+        <div class="details">Enter your email id: <input type="email" name="email" placeholder="Email" required></div>
+        </div>
+       <div class="btn"> <button><i class="fas fa-user-plus"></i> ADD CONTACT</button></div>
+    </form>
+</body>
+</html>

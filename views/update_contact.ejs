@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1>Update Your Details</h1>
+    <form action="/update/?id=<%= Contact._id %>" method="post">
+        <h3>Enter Your details-></h3>
+        <div class="main" >
+         <div class="details" > Enter Your Name: <input type="text" name="name" placeholder="Name" value="<%= Contact.name %>" ></div>
+       <div class="details">Enter Your Phone number: <input type="number" name="phone" placeholder="Phone" value="<%= Contact.phone %>"></div>
+        <div class="details">Enter your email id: <input type="email" name="email" placeholder="Email" value="<%= Contact.email %>"></div>
+        </div>
+       <div class="btn"> <button type="submit"><i class="fas fa-user-edit"></i> UPDATE CONTACT</button></div>
+    </form>
+</body>
+</html>

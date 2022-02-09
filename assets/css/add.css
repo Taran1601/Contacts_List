@@ -1,0 +1,35 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td{
+    text-align: center;
+    padding:20px;
+    font-weight: bold;
+    color: rgb(87, 41, 131);
+    border: none;
+    border-bottom: 1px solid grey;
+    
+}
+table{
+    border-collapse: collapse;
+    height:60vh;
+    width:100%;
+    border: none;
+}
+th{
+    color:brown;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding:20px;
+}
+tr:hover{
+    background-color: rgb(243, 157, 178);
+}
+#del{
+    color:red;
+    font-size: 25px;
+}
+#up{
+    color:green;
+    font-size: 25px;
+}
